@@ -15,4 +15,11 @@ public class PojoPassing{
       return "Get a specific Bar with id=" + barid +
         " from a Foo with id=" + fooid;
   }
+
+  @RequestMapping(value = "/hello/{name}", method = RequestMethod.GET)
+  @ResponseBody
+  public String getPersonalisedGreeting
+    (@PathVariable String name) {
+      return "Hello " + name;
+  }
 }
