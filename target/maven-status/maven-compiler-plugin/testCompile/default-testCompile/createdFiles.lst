@@ -1,3 +1,4 @@
 hello/ApplicationTest.class
-hello/HttpRequestTest.class
 hello/SmokeTest.class
+hello/HttpRequestTest.class
+hello/UnitTest.class
