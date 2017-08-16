@@ -20,4 +20,12 @@ public class JsonExample{
 
       return new ResponseEntity<Car>(car, HttpStatus.OK);
   }
+
+  @RequestMapping(value = "/car/increment", method = RequestMethod.POST)
+  public ResponseEntity<Car> update(@RequestBody Car car) {
+      if (car != null) {
+          car.setMiles(car.getMiles() + 100);
+      }
+      return new ResponseEntity<Car>(car, HttpStatus.OK);
+  }
 }
